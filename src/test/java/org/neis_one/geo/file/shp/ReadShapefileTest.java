@@ -8,11 +8,11 @@ import org.geotools.data.simple.SimpleFeatureSource;
 import org.junit.Test;
 
 /**
- * Test {@link ReadShp}.
+ * Test {@link ReadShapefile}.
  * 
  * @author pa5cal
  */
-public class ReadShpTest {
+public class ReadShapefileTest {
 
 	/**
 	 * Beschreibung: Liest Features aus einem Shapefile.<br>
@@ -21,7 +21,7 @@ public class ReadShpTest {
 	@Test
 	public void testGet() throws IOException {
 		// Arrange Testdata
-		ReadShp reader = new ReadShp();
+		ReadShapefile reader = new ReadShapefile();
 		// Act/Test
 		String filename = "./src/test/resources/samplepoints/SamplePoints.shp";
 		SimpleFeatureSource featureSource = reader.get(filename);

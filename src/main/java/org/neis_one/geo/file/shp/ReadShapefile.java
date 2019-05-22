@@ -14,7 +14,7 @@ import org.geotools.data.simple.SimpleFeatureSource;
  * 
  * @author pa5cal
  */
-public class ReadShp {
+public class ReadShapefile {
 
 	/**
 	 * Liefert ein {@link SimpleFeatureSource} von dem Shapefile, welches über den
@@ -25,11 +25,11 @@ public class ReadShp {
 		try {
 			// File
 			File file = new File(filename);
-			Map<String, Object> map = new HashMap<String, Object>();
-			map.put("url", file.toURI().toURL());
+			Map<String, Object> params = new HashMap<String, Object>();
+			params.put("url", file.toURI().toURL());
 
 			// Datastore
-			DataStore dataStore = DataStoreFinder.getDataStore(map);
+			DataStore dataStore = DataStoreFinder.getDataStore(params);
 			String typeName = dataStore.getTypeNames()[0];
 
 			// Read feature

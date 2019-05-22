@@ -1,5 +1,6 @@
 package org.neis_one.geo.grid;
 
+import java.awt.Polygon;
 import java.io.IOException;
 
 import org.geotools.data.simple.SimpleFeatureSource;
@@ -9,11 +10,10 @@ import org.geotools.grid.Envelopes;
 import org.geotools.grid.GridFeatureBuilder;
 import org.geotools.grid.Grids;
 import org.geotools.referencing.crs.DefaultGeographicCRS;
-import org.locationtech.jts.geom.Polygon;
 import org.opengis.feature.simple.SimpleFeatureType;
 
 /**
- * Creates heaxgon grid. More grid examples, see
+ * Creates hexagon grid. More grid examples, see
  * http://docs.geotools.org/latest/userguide/extension/grid.html
  * 
  * @author pa5cal
