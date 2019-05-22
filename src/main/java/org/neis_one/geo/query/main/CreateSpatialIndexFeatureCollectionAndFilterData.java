@@ -14,7 +14,7 @@ import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.filter.Filter;
 import org.opengis.filter.FilterFactory2;
 
-public class CreateSpatialIndexDeatureCollection {
+public class CreateSpatialIndexFeatureCollectionAndFilterData {
 
 	public static void main(String[] args) throws IOException {
 		// Read Shapefiles
@@ -33,6 +33,7 @@ public class CreateSpatialIndexDeatureCollection {
 		// Create Filter
 		FilterFactory2 ff = CommonFactoryFinder.getFilterFactory2();
 		SimpleFeatureIterator iter = piontFeatures.getFeatures().features();
+
 		// Filter features
 		while (iter.hasNext()) {
 			SimpleFeature point = iter.next();
@@ -42,5 +43,4 @@ public class CreateSpatialIndexDeatureCollection {
 			System.out.println(results.size());
 		}
 	}
-
 }
