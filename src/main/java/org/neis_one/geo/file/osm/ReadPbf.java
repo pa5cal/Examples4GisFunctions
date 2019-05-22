@@ -1,8 +1,5 @@
 package org.neis_one.geo.file.osm;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.util.Map;
 
 import org.openstreetmap.osmosis.core.container.v0_6.EntityContainer;
@@ -12,8 +9,6 @@ import org.openstreetmap.osmosis.core.container.v0_6.WayContainer;
 import org.openstreetmap.osmosis.core.domain.v0_6.Tag;
 import org.openstreetmap.osmosis.core.domain.v0_6.Way;
 import org.openstreetmap.osmosis.core.task.v0_6.Sink;
-
-import crosby.binary.osmosis.OsmosisReader;
 
 /**
  * Receives data from the Osmosis pipeline and prints ways which have the
@@ -52,12 +47,5 @@ public class ReadPbf implements Sink {
 
 	@Override
 	public void close() {
-	}
-
-	public static void main(String[] args) throws FileNotFoundException {
-		InputStream inputStream = new FileInputStream("/Path/To/Your/read.osm.pbf");
-		OsmosisReader reader = new OsmosisReader(inputStream);
-		reader.setSink(new ReadPbf());
-		reader.run();
 	}
 }
