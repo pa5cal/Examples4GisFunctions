@@ -1,10 +1,18 @@
 package org.neis_one.geo.quality.main;
 
+/**
+ * Example: Calculate PositionalAccuracy.
+ * 
+ * @author pa5cal
+ */
 public class PositionalAccuracy {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Read Shapefiles
+
+		// Buffer, intersect and calculate length
+
+		// Output result
 
 	}
-
 }

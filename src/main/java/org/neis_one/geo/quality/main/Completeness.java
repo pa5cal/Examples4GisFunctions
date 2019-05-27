@@ -11,11 +11,9 @@ import org.neis_one.geo.file.shp.ReadShapefile;
 import org.opengis.feature.simple.SimpleFeature;
 
 /**
- * 
- * Example: Calculate the total length of all features.
+ * Example: Calculate the total length of all shapefile features.
  * 
  * @author pa5cal
- *
  */
 public class Completeness {
 

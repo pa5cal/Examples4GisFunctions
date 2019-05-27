@@ -12,7 +12,6 @@ import org.neis_one.geo.file.shp.ReadShapefile;
 import org.opengis.feature.simple.SimpleFeature;
 
 /**
- * 
  * Example: Determine temporal accuracy of all shapefile features.
  * 
  * @author pa5cal
