@@ -1,37 +1,41 @@
 package org.neis_one.geo.quality.main;
 
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.geotools.data.simple.SimpleFeatureIterator;
 import org.geotools.data.simple.SimpleFeatureSource;
-import org.locationtech.jts.geom.Geometry;
-import org.neis_one.geo.check.Topology;
 import org.neis_one.geo.file.shp.ReadShapefile;
 import org.opengis.feature.simple.SimpleFeature;
 
 /**
  * 
- * Example: Check Topological Consistency of all shapefile features. (Logical
- * consistency)
+ * Example: Determine temporal accuracy of all shapefile features.
  * 
  * @author pa5cal
  */
-public class TopologicalConsistency {
+public class TemporalAccuracy {
 
 	public static void main(String[] args) {
 		// Read Shapefile
 		SimpleFeatureSource lineFeatures = new ReadShapefile().get("./src/test/resources/samplelines/SampleLines.shp");
 
-		// Check topology
-		int validFeatures = 0;
-		int features = 0;
+		// Determine temporal accuracy
+		Map<Integer, Integer> temporalAccuracyMap = new HashMap<>();
 		try {
 			SimpleFeatureIterator iter = lineFeatures.getFeatures().features();
 			while (iter.hasNext()) {
-				features++;
 				SimpleFeature line = iter.next();
-				Geometry geometry = (Geometry) line.getDefaultGeometry();
-				validFeatures += Topology.isValid(geometry) && Topology.isSimple(geometry) ? 1 : 0;
+				Object obj = line.getAttribute("tmstmp");
+				if (obj instanceof Date) {
+					Calendar calendar = Calendar.getInstance();
+					calendar.setTime((Date) obj);
+					int year = calendar.get(Calendar.YEAR);
+					temporalAccuracyMap.put(year, temporalAccuracyMap.getOrDefault(year, 0) + 1);
+				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -39,7 +43,6 @@ public class TopologicalConsistency {
 
 		// Output result
 		System.out.println("RESULT");
-		System.out.println("Features: " + features);
-		System.out.println("Valid: " + validFeatures);
+		System.out.println(temporalAccuracyMap);
 	}
 }
