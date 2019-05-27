@@ -8,8 +8,8 @@ import org.neis_one.geo.grid.Hexagon;
 public class CreateHexGridShpFileByShpFile {
 
 	public static void main(String[] args) {
-		SimpleFeatureSource featureCollection = new ReadShapefile().get("./Path/To/Your/Shapefile");
-		SimpleFeatureSource grid = Hexagon.create(featureCollection);
-		new WriteShapefile().put("./src/main/resources/hexgrid.shp", grid);
+		SimpleFeatureSource boundaries = new ReadShapefile().get("./Path/To/Your/Shapefile");
+		SimpleFeatureSource grid = Hexagon.create(boundaries);
+		new WriteShapefile().saveToFile(grid, "./src/main/resources/hexgrid.shp");
 	}
 }

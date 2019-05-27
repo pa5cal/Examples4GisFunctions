@@ -12,6 +12,6 @@ public class CreateHexGridShpFileByBbox {
 		ReferencedEnvelope gridBounds = new ReferencedEnvelope(8, 9, 49.5, 50.5, DefaultGeographicCRS.WGS84);
 		double sideLen = 0.1;
 		SimpleFeatureSource grid = Hexagon.create(gridBounds, sideLen);
-		new WriteShapefile().put("./src/main/resources/hexgrid.shp", grid);
+		new WriteShapefile().saveToFile(grid, "./src/main/resources/hexgrid.shp");
 	}
 }

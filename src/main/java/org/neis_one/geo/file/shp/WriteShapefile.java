@@ -39,7 +39,7 @@ public class WriteShapefile {
 	/**
 	 * Schreibt eine {@link SimpleFeatureSource} in ein Shapefilee.
 	 */
-	public void put(String filename, SimpleFeatureSource simpleFeatureSource) {
+	public void saveToFile(SimpleFeatureSource simpleFeatureSource, String filename) {
 		try {
 			// File
 			File file = new File(filename);
