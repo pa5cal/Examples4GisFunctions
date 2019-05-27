@@ -26,6 +26,6 @@ public class ReadShapefileTest {
 		String filename = "./src/test/resources/samplepoints/SamplePoints.shp";
 		SimpleFeatureSource featureSource = reader.get(filename);
 		// Assert
-		assertEquals(5, featureSource.getFeatures().size());
+		assertEquals(6, featureSource.getFeatures().size());
 	}
 }

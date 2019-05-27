@@ -1,9 +1,12 @@
 package org.neis_one.geo.calculation;
 
+import org.geotools.data.simple.SimpleFeatureIterator;
+import org.geotools.geometry.jts.Geometries;
 import org.geotools.referencing.GeodeticCalculator;
 import org.geotools.referencing.crs.DefaultGeographicCRS;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
+import org.opengis.feature.simple.SimpleFeature;
 
 public class Length {
 
@@ -20,5 +23,37 @@ public class Length {
 			length += calculator.getOrthodromicDistance();
 		}
 		return length;
+	}
+
+	/**
+	 * Calculate length of multigeometry (WGS84) in [meter].
+	 */
+	public static double calculateByMultiGeometry(Geometry geometry) {
+		double totalLength = 0;
+		for (int idx = 0; idx < geometry.getNumGeometries(); idx++) {
+			totalLength = Length.calculate(geometry.getGeometryN(idx));
+		}
+		return totalLength;
+	}
+
+	public static double calculate(SimpleFeatureIterator iter) {
+		double totalLength = 0;
+		while (iter.hasNext()) {
+			SimpleFeature line = iter.next();
+			Geometry geom = (Geometry) line.getDefaultGeometry();
+			switch (Geometries.get(geom)) {
+			case LINESTRING:
+				totalLength = Length.calculate(geom);
+				break;
+			case MULTILINESTRING:
+				for (int idx = 0; idx < geom.getNumGeometries(); idx++) {
+					totalLength = Length.calculate(geom.getGeometryN(idx));
+				}
+				break;
+			default:
+				throw new RuntimeException("Not supported Geometry! " + line.getType());
+			}
+		}
+		return totalLength;
 	}
 }

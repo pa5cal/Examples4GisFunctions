@@ -18,6 +18,13 @@ public class PolygonFactory extends AbstractGeometryFactory {
 	}
 
 	/**
+	 * Creates invalid polygon with WGS84 coordinates.
+	 */
+	public static Geometry createTestObjWgs84Invalid() {
+		return createByWkt("POLYGON((8 50, 8.001 50, 7.001 49.999, 8.001 49.999, 8 50))");
+	}
+
+	/**
 	 * Creates polygon based on WKT definition.
 	 */
 	public static Geometry createByWkt(String inputWkt) {
