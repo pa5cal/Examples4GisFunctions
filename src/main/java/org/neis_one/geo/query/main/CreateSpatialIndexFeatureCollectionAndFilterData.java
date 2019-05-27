@@ -18,7 +18,7 @@ public class CreateSpatialIndexFeatureCollectionAndFilterData {
 
 	public static void main(String[] args) throws IOException {
 		// Read Shapefiles
-		SimpleFeatureSource piontFeatures = new ReadShapefile()
+		SimpleFeatureSource pointFeatures = new ReadShapefile()
 				.get("./src/test/resources/samplepoints/SamplePoints.shp");
 		SimpleFeatureSource polygonFeatures = new ReadShapefile()
 				.get("./src/test/resources/samplepolygons/SamplePolygon.shp");
@@ -32,7 +32,7 @@ public class CreateSpatialIndexFeatureCollectionAndFilterData {
 
 		// Create Filter
 		FilterFactory2 ff = CommonFactoryFinder.getFilterFactory2();
-		SimpleFeatureIterator iter = piontFeatures.getFeatures().features();
+		SimpleFeatureIterator iter = pointFeatures.getFeatures().features();
 
 		// Filter features
 		while (iter.hasNext()) {
