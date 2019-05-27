@@ -36,6 +36,9 @@ public class Length {
 		return totalLength;
 	}
 
+	/**
+	 * Calculate length of SimpleFeatureIterator (WGS84) in [meter].
+	 */
 	public static double calculate(SimpleFeatureIterator iter) {
 		double totalLength = 0;
 		while (iter.hasNext()) {

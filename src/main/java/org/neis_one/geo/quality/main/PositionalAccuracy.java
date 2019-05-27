@@ -43,7 +43,7 @@ public class PositionalAccuracy {
 		// Output result
 		System.out.println("RESULT");
 		System.out.println("Expected length: " + expectedLength);
-		System.out.println("Expected length: " + actualLength);
+		System.out.println("Actual length: " + actualLength);
 		System.out.println("PositionalAccuracy length[m]: " + intersectionLength);
 	}
 
