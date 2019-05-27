@@ -31,7 +31,8 @@ public class TopologicalConsistency {
 			while (iter.hasNext()) {
 				features++;
 				SimpleFeature line = iter.next();
-				validFeatures += Topology.isValid((Geometry) line.getDefaultGeometry()) ? 1 : 0;
+				Geometry geometry = (Geometry) line.getDefaultGeometry();
+				validFeatures += Topology.isValid(geometry) && Topology.isSimple(geometry) ? 1 : 0;
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

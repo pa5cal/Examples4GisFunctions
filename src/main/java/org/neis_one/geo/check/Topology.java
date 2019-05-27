@@ -10,4 +10,11 @@ public class Topology {
 	public static boolean isValid(Geometry geom) {
 		return geom.isValid();
 	}
+
+	/**
+	 * See {@link Geometry#isSimple()}
+	 */
+	public static boolean isSimple(Geometry geom) {
+		return geom.isSimple();
+	}
 }
