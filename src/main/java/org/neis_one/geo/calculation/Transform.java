@@ -19,10 +19,24 @@ import org.opengis.referencing.operation.TransformException;
 
 public class Transform {
 
+	public static CoordinateReferenceSystem getWGS84() {
+		return DefaultGeographicCRS.WGS84;
+	}
+
+	public static CoordinateReferenceSystem getUTM32() {
+		CoordinateReferenceSystem resut = getWGS84();
+		try {
+			resut = CRS.decode("EPSG:25832");
+		} catch (FactoryException e) {
+			System.out.println("Not found ... use default WGS84");
+			e.printStackTrace();
+		}
+		return resut;
+	}
+
 	public static Geometry fromWgs84toUTM32(Geometry geom) {
 		try {
-			CoordinateReferenceSystem equalAreaCRS = CRS.decode("EPSG:25832");
-			MathTransform transform = CRS.findMathTransform(DefaultGeographicCRS.WGS84, equalAreaCRS, true);
+			MathTransform transform = CRS.findMathTransform(getWGS84(), getUTM32(), true);
 			geom = JTS.transform(geom, transform);
 		} catch (FactoryException | MismatchedDimensionException | TransformException e) {
 			e.printStackTrace();
@@ -32,7 +46,7 @@ public class Transform {
 
 	public static Geometry fromUTM32toWgs84(Geometry geom) {
 		try {
-			MathTransform transform = CRS.findMathTransform(CRS.decode("EPSG:25832"), DefaultGeographicCRS.WGS84, true);
+			MathTransform transform = CRS.findMathTransform(getUTM32(), getWGS84(), true);
 			geom = JTS.transform(geom, transform);
 		} catch (FactoryException | MismatchedDimensionException | TransformException e) {
 			e.printStackTrace();
