@@ -10,13 +10,15 @@ import org.neis_one.geo.file.shp.ReadShapefile;
 import org.opengis.feature.simple.SimpleFeature;
 
 /**
- * 
- * Example: Check Topological Consistency of all shapefile features. (Logical
- * consistency)
+ * Example: Check Topological Consistency of all shapefile features. <br>
+ * "Topologische Konsistenz (topological consistency): Richtigkeit der kodierten
+ * topologischen Charakteristika, z. B. Nachbarschaftsbeziehungen müssen
+ * erhalten bleiben." vgl.
+ * https://de.wikipedia.org/wiki/Geodaten#Logische_Konsistenz
  * 
  * @author pa5cal
  */
-public class TopologicalConsistency {
+public class LogicalConsistencyTopologicalConsistency {
 
 	public static void main(String[] args) {
 		// Read Shapefile
