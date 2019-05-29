@@ -31,7 +31,7 @@ public class PositionalAccuracy {
 		// Transform
 		final Collection<Geometry> geometriesExpected = transform(lineFeaturesExpected);
 		final Collection<Geometry> geometriesActual = transform(lineFeaturesActual);
-		// Buffer
+		// Buffer (10m)
 		final Collection<Geometry> geometriesBuffered = geometriesExpected.stream().map(g -> g.buffer(10))
 				.collect(Collectors.toList());
 		// Intersect
