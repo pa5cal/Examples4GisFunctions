@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.operation.union.UnaryUnionOp;
 import org.neis_one.geo.calculation.Transform;
 import org.neis_one.geo.file.shp.ReadShapefile;
 
@@ -31,8 +32,13 @@ public class PositionalAccuracy {
 		// Buffer (10m)
 		final Collection<Geometry> geometriesBuffered = geometriesExpected.stream().map(g -> g.buffer(10))
 				.collect(Collectors.toList());
+
+		// Union
+		UnaryUnionOp union = new UnaryUnionOp(geometriesBuffered);
+		Geometry result = union.union();
+
 		// Intersect
-		final Collection<Geometry> geometriesIntersections = intersect(geometriesActual, geometriesBuffered);
+		final Collection<Geometry> geometriesIntersections = intersect(geometriesActual, result);
 
 		// Calculate length
 		double expectedLength = calculateLength(geometriesExpected);
@@ -47,14 +53,12 @@ public class PositionalAccuracy {
 	}
 
 	private static Collection<Geometry> intersect(final Collection<Geometry> geometriesActual,
-			final Collection<Geometry> geometriesBuffered) {
+			final Geometry geometriesBuffered) {
 		Collection<Geometry> geometriesIntersections = new ArrayList<>();
 		for (Geometry geom : geometriesActual) {
-			for (Geometry geomBuffer : geometriesBuffered) {
-				Geometry geomIntersection = geom.intersection(geomBuffer);
-				if (!geomIntersection.isEmpty()) {
-					geometriesIntersections.add(geomIntersection);
-				}
+			Geometry geomIntersection = geom.intersection(geometriesBuffered);
+			if (!geomIntersection.isEmpty()) {
+				geometriesIntersections.add(geomIntersection);
 			}
 		}
 		return geometriesIntersections;
