@@ -13,7 +13,9 @@ import org.neis_one.geo.file.shp.ReadShapefile;
 import org.opengis.feature.simple.SimpleFeature;
 
 /**
- * Example: Calculate PositionalAccuracy.
+ * Example: Calculate PositionalAccuracy.<br>
+ * "Positionsgenauigkeit (positional accuracy): Genauigkeit der Lage von
+ * Objekten" vgl. https://de.wikipedia.org/wiki/Geodaten#Positionsgenauigkeit
  * 
  * @author pa5cal
  */

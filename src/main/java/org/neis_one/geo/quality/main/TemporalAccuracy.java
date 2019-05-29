@@ -12,7 +12,10 @@ import org.neis_one.geo.file.shp.ReadShapefile;
 import org.opengis.feature.simple.SimpleFeature;
 
 /**
- * Example: Determine temporal accuracy of all shapefile features.
+ * Example: Determine temporal accuracy of all shapefile features.<br>
+ * "Zeitliche Genauigkeit (temporal accuracy): Genauigkeit der Zeitangaben und
+ * der zeitlichen Beziehungen von Objekten" vgl.
+ * https://de.wikipedia.org/wiki/Geodaten#Zeitliche_Genauigkeit
  * 
  * @author pa5cal
  */

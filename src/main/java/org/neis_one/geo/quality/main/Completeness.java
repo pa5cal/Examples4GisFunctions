@@ -7,7 +7,10 @@ import org.neis_one.geo.calculation.Length;
 import org.neis_one.geo.file.shp.ReadShapefile;
 
 /**
- * Example: Calculate the total length of all shapefile features.
+ * Example: Calculate the total length of all shapefile features. <br>
+ * "Datenüberschuss (commission): Datensatz hat zusätzliche Informationen.
+ * Datenmangel (omission): Datensatz enthält weniger Daten als angegeben." vgl.
+ * https://de.wikipedia.org/wiki/Geodaten#Vollst%C3%A4ndigkeit
  * 
  * @author pa5cal
  */
