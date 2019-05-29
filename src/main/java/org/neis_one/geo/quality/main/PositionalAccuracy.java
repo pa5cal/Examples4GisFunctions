@@ -1,16 +1,13 @@
 package org.neis_one.geo.quality.main;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
-import org.geotools.data.simple.SimpleFeatureIterator;
 import org.geotools.data.simple.SimpleFeatureSource;
 import org.locationtech.jts.geom.Geometry;
 import org.neis_one.geo.calculation.Transform;
 import org.neis_one.geo.file.shp.ReadShapefile;
-import org.opengis.feature.simple.SimpleFeature;
 
 /**
  * Example: Calculate PositionalAccuracy.<br>
@@ -29,8 +26,8 @@ public class PositionalAccuracy {
 				.get("./src/test/resources/samplelines/SampleLinesModifiedCopy.shp");
 
 		// Transform
-		final Collection<Geometry> geometriesExpected = transform(lineFeaturesExpected);
-		final Collection<Geometry> geometriesActual = transform(lineFeaturesActual);
+		final Collection<Geometry> geometriesExpected = Transform.transform(lineFeaturesExpected);
+		final Collection<Geometry> geometriesActual = Transform.transform(lineFeaturesActual);
 		// Buffer (10m)
 		final Collection<Geometry> geometriesBuffered = geometriesExpected.stream().map(g -> g.buffer(10))
 				.collect(Collectors.toList());
@@ -61,20 +58,6 @@ public class PositionalAccuracy {
 			}
 		}
 		return geometriesIntersections;
-	}
-
-	private static Collection<Geometry> transform(SimpleFeatureSource features) {
-		Collection<Geometry> transformed = new ArrayList<>();
-		try {
-			SimpleFeatureIterator iter = features.getFeatures().features();
-			while (iter.hasNext()) {
-				SimpleFeature line = iter.next();
-				transformed.add(Transform.fromWgs84toUTM32((Geometry) line.getDefaultGeometry()));
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return transformed;
 	}
 
 	private static double calculateLength(final Collection<Geometry> geometries) {
