@@ -46,7 +46,8 @@ public class HighwayToShpExport {
 	}
 
 	private void save(String osmFilePath, Collection<OsmFeature> result) {
-		OsmFeaturesToShp writer = new OsmFeaturesToShp(result);
+		OsmFeaturesToShp writer = new OsmFeaturesToShp();
+		writer.init(result);
 		writer.save(osmFilePath);
 	}
 

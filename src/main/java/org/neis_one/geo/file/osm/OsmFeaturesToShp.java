@@ -1,10 +1,19 @@
 package org.neis_one.geo.file.osm;
 
 import java.util.Collection;
+import java.util.Optional;
 
+import org.geotools.data.DataUtilities;
+import org.geotools.data.simple.SimpleFeatureSource;
+import org.geotools.feature.DefaultFeatureCollection;
+import org.geotools.feature.SchemaException;
+import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.GeometryFactory;
+import org.neis_one.geo.file.shp.WriteShapefile;
+import org.opengis.feature.simple.SimpleFeature;
+import org.opengis.feature.simple.SimpleFeatureType;
 
 /**
  * Writes {@link DroneMapElement}'s to a file.
@@ -13,7 +22,13 @@ import org.locationtech.jts.geom.GeometryFactory;
  */
 public class OsmFeaturesToShp {
 
-	public OsmFeaturesToShp(Collection<OsmFeature> osmFeatures) {
+	private Optional<SimpleFeatureSource> featureSource;
+
+	public void init(Collection<OsmFeature> osmFeatures) {
+
+		SimpleFeatureType featureType = createFeatureType();
+		DefaultFeatureCollection featureCollection = createDefaultFeatureCollection(featureType);
+
 		for (OsmFeature osmFeature : osmFeatures) {
 			if (osmFeature.osmNodes.size() < 2) {
 				System.out.println("Invalid number of points in LineString (found 1 - must be 0 or >= 2) - skip");
@@ -30,11 +45,34 @@ public class OsmFeaturesToShp {
 				elementGeometry = new GeometryFactory().createLineString(coordinates);
 			}
 
-			// TODO pa5cal create feature for featurecollection
+			// Create feature
+			featureCollection.add(createFeature(featureType, osmFeature, elementGeometry));
 		}
+
+		featureSource = Optional.of(DataUtilities.source(featureCollection));
 	}
 
 	public void save(String shpFilepath) {
-		// TODO pa5cal save as shapefile
+		featureSource.ifPresent(f -> new WriteShapefile().saveToFile(f, shpFilepath));
+	}
+
+	private SimpleFeatureType createFeatureType() {
+		SimpleFeatureType featureType = null;
+		try {
+			featureType = DataUtilities.createType("OSMExport",
+					"geom:Polygon:srid=4326,id:String,key:String,value:String");
+		} catch (SchemaException e) {
+			e.printStackTrace();
+		}
+		return featureType;
+	}
+
+	private DefaultFeatureCollection createDefaultFeatureCollection(SimpleFeatureType featureType) {
+		return new DefaultFeatureCollection("internal", featureType);
+	}
+
+	private SimpleFeature createFeature(SimpleFeatureType featureType, OsmFeature osmFeature, Geometry result) {
+		String id = Long.toString(osmFeature.osmElement.getId());
+		return SimpleFeatureBuilder.build(featureType, new Object[] { result, id }, id);
 	}
 }
