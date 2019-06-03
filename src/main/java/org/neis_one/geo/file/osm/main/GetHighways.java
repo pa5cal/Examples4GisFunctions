@@ -40,7 +40,7 @@ public class GetHighways {
 		System.out.println("Start...");
 		String osmFilePath = "/Path/To/Your/read.osm.pbf";
 		Map<String, Set<String>> filteringKeyValues = new HashMap<>();
-		filteringKeyValues.put("highway", Sets.newHashSet("motorway", "secondary", "path"));
+		filteringKeyValues.put("highway", Sets.newHashSet("motorway", "motorway_link", "secondary", "path"));
 
 		GetHighways result = new GetHighways();
 		result.save(osmFilePath, filteringKeyValues);
