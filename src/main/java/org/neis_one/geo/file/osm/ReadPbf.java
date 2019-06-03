@@ -1,6 +1,7 @@
 package org.neis_one.geo.file.osm;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -29,11 +30,13 @@ public class ReadPbf implements Sink {
 	private final KeyValueFilter keyValueFilter;
 	private final Store<Node> nodeStore;
 	private final Store<Way> wayStore;
+	private final Collection<OsmFeature> savedMapElements;
 
 	public ReadPbf(KeyValueFilter keyValueFilter) {
 		this.keyValueFilter = keyValueFilter;
-		nodeStore = new Store<Node>();
-		wayStore = new Store<Way>();
+		this.nodeStore = new Store<Node>();
+		this.wayStore = new Store<Way>();
+		this.savedMapElements = new ArrayList<>();
 	}
 
 	@Override
@@ -59,6 +62,10 @@ public class ReadPbf implements Sink {
 	public void close() {
 	}
 
+	public Collection<OsmFeature> getResult() {
+		return savedMapElements;
+	}
+
 	private void processNode(EntityContainer entityContainer) {
 		nodeStore.saveIfContainsId(((NodeContainer) entityContainer).getEntity());
 	}
@@ -72,8 +79,7 @@ public class ReadPbf implements Sink {
 			List<Node> nodes = way.getWayNodes().stream().map(wn -> nodeStore.get(wn.getNodeId()))
 					.filter(n -> n != null).collect(Collectors.toList());
 			if (!nodes.isEmpty()) {
-				// #TODO droneMapElementsResult.add(new DroneMapElement(osmElementFilter, way,
-				// nodes));
+				savedMapElements.add(new OsmFeature(way, nodes));
 			}
 		}
 		if (wayStore.saveIfContainsId(way)) {
@@ -115,8 +121,7 @@ public class ReadPbf implements Sink {
 						}
 					}
 					if (!nodes.isEmpty()) {
-						// #TODO droneMapElementsResult.add(new DroneMapElement(osmElementFilter,
-						// relation, nodes));
+						savedMapElements.add(new OsmFeature(relation, nodes));
 					}
 				}
 			}
