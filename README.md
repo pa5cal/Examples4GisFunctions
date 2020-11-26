@@ -1,6 +1,6 @@
 # Examples4GisFunctions
 
-Several JAVA examples for processing spatial data. #GeoTools #OpenStreetMap
+Several JAVA examples for processing spatial data. #GeoTools #OpenStreetMap #Geojson #Shapefile
 
 
 ## Built With
@@ -9,7 +9,7 @@ Several JAVA examples for processing spatial data. #GeoTools #OpenStreetMap
 
 ## Authors
 
-* **Pascal Neis** - *Initial work* - [pa5cal](https://github.com/pa5cal)
+* **Pascal Neis** - [pa5cal](https://github.com/pa5cal)
 
 ## License
 
