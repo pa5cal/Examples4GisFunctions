@@ -19,9 +19,9 @@ public class ReadGeojsonWithGeotools {
 	/**
 	 * Returns {@link FeatureCollection} of the geojson file.
 	 */
-
+	@SuppressWarnings("unchecked")
 	public static FeatureCollection<FeatureType, Feature> get(String filename) {
-		org.geotools.feature.FeatureCollection<FeatureType, Feature> featureCollection = null;
+		FeatureCollection<FeatureType, Feature> featureCollection = null;
 		try {
 			File file = new File(filename);
 			featureCollection = new FeatureJSON().readFeatureCollection(new FileInputStream(file));

@@ -27,14 +27,15 @@ public class ThematicAccuracyClassificationCorrectness {
 		// Read Shapefiles
 		final SimpleFeatureSource lineFeaturesExpected = new ReadShapefile()
 				.get("./src/test/resources/samplelines/SampleLines.shp");
-		final SimpleFeatureSource lineFeaturesActual = new ReadShapefile()
-				.get("./src/test/resources/samplelines/SampleLinesModifiedCopy.shp");
+		// final SimpleFeatureSource lineFeaturesActual = new ReadShapefile()
+		// .get("./src/test/resources/samplelines/SampleLinesModifiedCopy.shp");
 
 		// Transform Featurecollections
 		final ReprojectingFeatureCollection transformedFeaturesExpected = new ReprojectingFeatureCollection(
 				lineFeaturesExpected.getFeatures(), Transform.getUTM32());
-		final ReprojectingFeatureCollection transformedFeatures = new ReprojectingFeatureCollection(
-				lineFeaturesActual.getFeatures(), Transform.getUTM32());
+		// final ReprojectingFeatureCollection transformedFeatures = new
+		// ReprojectingFeatureCollection(
+		// lineFeaturesActual.getFeatures(), Transform.getUTM32());
 
 		final Collection<Geometry> geometries = new ArrayList<>();
 		final SimpleFeatureIterator iter = transformedFeaturesExpected.features();
@@ -49,10 +50,11 @@ public class ThematicAccuracyClassificationCorrectness {
 		// #TODO pa5cal intersect?
 
 		// Buffer, intersect and compare attributes
-//		while (iter.hasNext()) {
-//			SimpleFeature feature = iter.next();
-//			Geometry geom = ((Geometry) feature.getDefaultGeometryProperty()).buffer(10);
-//		}
+		// while (iter.hasNext()) {
+		// SimpleFeature feature = iter.next();
+		// Geometry geom = ((Geometry)
+		// feature.getDefaultGeometryProperty()).buffer(10);
+		// }
 
 		// Output result
 
