@@ -41,6 +41,12 @@
 			<artifactId>gt-grid</artifactId>
 			<version>${geotools.version}</version>
 		</dependency>
+		<!-- Geotools GeoJson -->
+		<dependency>
+		    <groupId>org.geotools</groupId>
+		    <artifactId>gt-geojson</artifactId>
+		    <version>24.0</version>
+		</dependency>
 		<!-- GeoJson POJOs for Jackson -->
 		<dependency>
 			<groupId>de.grundid.opendatalab</groupId>

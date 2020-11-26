@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class ReadGeojson {
 
 	/**
-	 * Returns {@link FeatureCollection} of the geosjon file.
+	 * Returns {@link FeatureCollection} of the geojson file.
 	 */
 	public static FeatureCollection get(String filename) {
 		FeatureCollection featureCollection = null;

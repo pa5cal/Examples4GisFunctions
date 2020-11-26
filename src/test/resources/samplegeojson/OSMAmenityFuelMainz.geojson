@@ -1,0 +1,1214 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-11-26T18:16:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/51573216",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "building": "retail",
+        "building:levels": "1",
+        "mapillary": "2LJGyPiZQubDQ_z1cxx1Jw",
+        "name": "Shell",
+        "opening_hours": "Mo-Fr 06:00-22:00; Sa 07:00-22:00; Su 08:00-22:00",
+        "operator": "Shell",
+        "roof:levels": "0",
+        "survey:date": "2018-03-29",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2695992,
+              49.9806128
+            ],
+            [
+              8.2696376,
+              49.9804804
+            ],
+            [
+              8.2700667,
+              49.980527
+            ],
+            [
+              8.2700305,
+              49.9806637
+            ],
+            [
+              8.2695992,
+              49.9806128
+            ]
+          ]
+        ]
+      },
+      "id": "way/51573216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/57757966",
+        "addr:housenumber": "207",
+        "addr:postcode": "55120",
+        "addr:street": "Rheinallee",
+        "amenity": "fuel",
+        "brand": "Aral",
+        "brand:wikidata": "Q565734",
+        "brand:wikipedia": "en:Aral AG",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "Aral",
+        "opening_hours": "24/7",
+        "operator": "Aral",
+        "phone": "+49 61 31 68 70 11",
+        "roof:levels": "0",
+        "website": "https://www.aral.de/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2225991,
+              50.0274239
+            ],
+            [
+              8.2225246,
+              50.0273292
+            ],
+            [
+              8.2226827,
+              50.0272779
+            ],
+            [
+              8.2226744,
+              50.0272674
+            ],
+            [
+              8.2229786,
+              50.0271686
+            ],
+            [
+              8.2229532,
+              50.0271363
+            ],
+            [
+              8.2229082,
+              50.0270796
+            ],
+            [
+              8.2230239,
+              50.0270417
+            ],
+            [
+              8.2230688,
+              50.0270983
+            ],
+            [
+              8.2231984,
+              50.027263
+            ],
+            [
+              8.2230977,
+              50.0272958
+            ],
+            [
+              8.2230765,
+              50.0272688
+            ],
+            [
+              8.2225991,
+              50.0274239
+            ]
+          ]
+        ]
+      },
+      "id": "way/57757966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/77811252",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "13",
+        "addr:postcode": "55129",
+        "addr:street": "Rheinhessenstraße",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q154950",
+        "brand:wikipedia": "en:Royal Dutch Shell",
+        "building": "yes",
+        "fuel:1_25": "yes",
+        "fuel:1_50": "yes",
+        "fuel:GTL_diesel": "yes",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_100": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Shell",
+        "opening_hours": "24/7",
+        "operator": "Dellko GmbH",
+        "source": "Yahoo"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2698069,
+              49.9684177
+            ],
+            [
+              8.2698043,
+              49.9681439
+            ],
+            [
+              8.2699604,
+              49.9681432
+            ],
+            [
+              8.2699631,
+              49.9684171
+            ],
+            [
+              8.2698069,
+              49.9684177
+            ]
+          ]
+        ]
+      },
+      "id": "way/77811252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/103051208",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "7",
+        "addr:postcode": "55124",
+        "addr:street": "Kurt-Schumacher-Straße",
+        "amenity": "fuel",
+        "brand": "Esso",
+        "brand:wikidata": "Q867662",
+        "brand:wikipedia": "en:Esso",
+        "building": "yes",
+        "name": "Esso",
+        "opening_hours": "Mo-Fr 06:00-22:30; Sa 07:00-22:30; Su 08:00-22:30",
+        "operator": "Esso",
+        "phone": "+49 6131 9430019"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2171324,
+              50.0018572
+            ],
+            [
+              8.2173886,
+              50.0016879
+            ],
+            [
+              8.2175651,
+              50.0017983
+            ],
+            [
+              8.2174467,
+              50.0018765
+            ],
+            [
+              8.2173701,
+              50.0018286
+            ],
+            [
+              8.2172323,
+              50.0019197
+            ],
+            [
+              8.2171324,
+              50.0018572
+            ]
+          ]
+        ]
+      },
+      "id": "way/103051208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/131287140",
+        "amenity": "fuel",
+        "brand": "Jet",
+        "brand:wikidata": "Q568940",
+        "brand:wikipedia": "en:Jet (brand)",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Jet",
+        "operator": "Jet",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.3063445,
+              49.9818316
+            ],
+            [
+              8.306192,
+              49.9819376
+            ],
+            [
+              8.3058732,
+              49.9821788
+            ],
+            [
+              8.305705,
+              49.982095
+            ],
+            [
+              8.305664,
+              49.9820189
+            ],
+            [
+              8.3056758,
+              49.9819604
+            ],
+            [
+              8.3056274,
+              49.9819248
+            ],
+            [
+              8.3054566,
+              49.9818096
+            ],
+            [
+              8.3056501,
+              49.9817913
+            ],
+            [
+              8.3059913,
+              49.9818111
+            ],
+            [
+              8.3063445,
+              49.9818316
+            ]
+          ]
+        ]
+      },
+      "id": "way/131287140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/149829177",
+        "access": "private",
+        "amenity": "fuel",
+        "building": "yes",
+        "name": "ZDF-Tankstelle"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2124396,
+              49.9642356
+            ],
+            [
+              8.2125421,
+              49.9640158
+            ],
+            [
+              8.2125587,
+              49.9639801
+            ],
+            [
+              8.2125726,
+              49.9639503
+            ],
+            [
+              8.2128575,
+              49.9640052
+            ],
+            [
+              8.2128427,
+              49.964037
+            ],
+            [
+              8.2128138,
+              49.964099
+            ],
+            [
+              8.2127245,
+              49.9642906
+            ],
+            [
+              8.2124396,
+              49.9642356
+            ]
+          ]
+        ]
+      },
+      "id": "way/149829177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/181030258",
+        "amenity": "fuel",
+        "brand": "bft",
+        "fuel:1_25": "no",
+        "fuel:1_50": "no",
+        "fuel:GTL_diesel": "no",
+        "fuel:HGV_diesel": "no",
+        "fuel:biodiesel": "no",
+        "fuel:cng": "no",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:e85": "no",
+        "fuel:lpg": "yes",
+        "fuel:octane_100": "no",
+        "fuel:octane_80": "no",
+        "fuel:octane_91": "no",
+        "fuel:octane_92": "no",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2206647,
+              50.0203051
+            ],
+            [
+              8.220448,
+              50.0202585
+            ],
+            [
+              8.2203046,
+              50.0202557
+            ],
+            [
+              8.2203151,
+              50.0200708
+            ],
+            [
+              8.220542,
+              50.0195934
+            ],
+            [
+              8.2206875,
+              50.0196022
+            ],
+            [
+              8.220684,
+              50.0197891
+            ],
+            [
+              8.2206647,
+              50.0203051
+            ]
+          ]
+        ]
+      },
+      "id": "way/181030258"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/183254069",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "7",
+        "addr:postcode": "55130",
+        "addr:street": "Wormser Straße",
+        "amenity": "fuel",
+        "brand": "Esso",
+        "brand:wikidata": "Q867662",
+        "brand:wikipedia": "en:Esso",
+        "building": "commercial",
+        "cafe": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Esso",
+        "operator": "Esso"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2973349,
+              49.9867648
+            ],
+            [
+              8.2972263,
+              49.9868314
+            ],
+            [
+              8.2969986,
+              49.9866779
+            ],
+            [
+              8.2971142,
+              49.9866071
+            ],
+            [
+              8.2973349,
+              49.9867648
+            ]
+          ]
+        ]
+      },
+      "id": "way/183254069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/192427826",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "4",
+        "addr:postcode": "55131",
+        "addr:street": "Hechtsheimer Straße",
+        "amenity": "fuel",
+        "brand": "Aral",
+        "brand:wikidata": "Q565734",
+        "brand:wikipedia": "en:Aral AG",
+        "building": "yes",
+        "contact:fax": "+49 6131 985788",
+        "contact:phone": "+49 6131 985789",
+        "contact:website": "http://www.aral.de/tankstelle/mainz/hechtsheimer_strasse/28395100.html",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Aral",
+        "opening_hours": "Mo-Fr 06:00-22:00; Sa 07:00-22:00; Su 08:00-22:00",
+        "operator": "Wolfgang Hamel"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2802407,
+              49.9827462
+            ],
+            [
+              8.280252,
+              49.9826728
+            ],
+            [
+              8.2802692,
+              49.9825602
+            ],
+            [
+              8.2804189,
+              49.9825697
+            ],
+            [
+              8.2803904,
+              49.9827557
+            ],
+            [
+              8.2802407,
+              49.9827462
+            ]
+          ]
+        ]
+      },
+      "id": "way/192427826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/235295206",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "26",
+        "addr:postcode": "55126",
+        "addr:street": "Flugplatzstraße",
+        "amenity": "fuel",
+        "brand": "Total",
+        "brand:wikidata": "Q154037",
+        "brand:wikipedia": "fr:Total (entreprise)",
+        "building": "commercial",
+        "name": "Total",
+        "opening_hours": "Mo-Fr 06:00-22:00; Sa 07:00-22:00; Su 08:00-22:00",
+        "phone": "+49 6131 40805",
+        "source": "bing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.1708813,
+              49.9833581
+            ],
+            [
+              8.1706038,
+              49.9833127
+            ],
+            [
+              8.1706407,
+              49.9832195
+            ],
+            [
+              8.1709182,
+              49.9832649
+            ],
+            [
+              8.1708813,
+              49.9833581
+            ]
+          ]
+        ]
+      },
+      "id": "way/235295206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/502430318",
+        "addr:city": "Mainz",
+        "addr:housenumber": "4",
+        "addr:postcode": "55129",
+        "addr:street": "Am Kesseltal",
+        "amenity": "fuel",
+        "brand": "Total",
+        "building": "yes",
+        "fax": "+49 6136 954371",
+        "fuel:GTL_diesel": "yes",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "fuel:lpg": "yes",
+        "fuel:octane_91": "no",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Total",
+        "opening_hours": "Mo-Fr 05:00-23:00; Sa 06:00-23:00; Su 07:00-22:00",
+        "operator": "Total Deutschland GmbH",
+        "phone": "+49 6136 954195",
+        "shop": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2656145,
+              49.9222788
+            ],
+            [
+              8.2656861,
+              49.9223019
+            ],
+            [
+              8.2657349,
+              49.9222386
+            ],
+            [
+              8.2656006,
+              49.9221956
+            ],
+            [
+              8.2656672,
+              49.9221092
+            ],
+            [
+              8.2659975,
+              49.9222148
+            ],
+            [
+              8.265882,
+              49.9223646
+            ],
+            [
+              8.2659216,
+              49.9223774
+            ],
+            [
+              8.2658468,
+              49.9224732
+            ],
+            [
+              8.2655402,
+              49.922374
+            ],
+            [
+              8.2656145,
+              49.9222788
+            ]
+          ]
+        ]
+      },
+      "id": "way/502430318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/655640847",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "2",
+        "addr:postcode": "55129",
+        "addr:street": "Barcelona-Allee",
+        "amenity": "fuel",
+        "brand": "Jet",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Jet",
+        "operator": "Jet",
+        "shop": "kiosk"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2598928,
+              49.9481138
+            ],
+            [
+              8.2599051,
+              49.9480723
+            ],
+            [
+              8.2610045,
+              49.9482754
+            ],
+            [
+              8.2607442,
+              49.948689
+            ],
+            [
+              8.2600054,
+              49.9485611
+            ],
+            [
+              8.2600695,
+              49.9484018
+            ],
+            [
+              8.260148,
+              49.9481981
+            ],
+            [
+              8.259941,
+              49.9481648
+            ],
+            [
+              8.2598928,
+              49.9481138
+            ]
+          ]
+        ]
+      },
+      "id": "way/655640847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/784506291",
+        "addr:city": "Mainz",
+        "addr:housenumber": "6",
+        "addr:postcode": "55122",
+        "addr:street": "Saarstraße",
+        "amenity": "fuel",
+        "brand": "Total",
+        "brand:wikidata": "Q154037",
+        "brand:wikipedia": "fr:Total (entreprise)",
+        "fuel:diesel": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Total",
+        "operator": "Total"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              8.2533,
+              49.9978621
+            ],
+            [
+              8.253254,
+              49.9976676
+            ],
+            [
+              8.253388,
+              49.9976669
+            ],
+            [
+              8.2541148,
+              49.9976576
+            ],
+            [
+              8.2541104,
+              49.9978902
+            ],
+            [
+              8.2533,
+              49.9978621
+            ]
+          ]
+        ]
+      },
+      "id": "way/784506291"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/84406137",
+        "amenity": "fuel",
+        "brand": "Agip",
+        "brand:wikidata": "Q377915",
+        "brand:wikipedia": "en:Agip",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Agip",
+        "opening_hours": "Mo-Fr 04:00-22:00; Sa,Su,PH 08:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3335422,
+          49.95622
+        ]
+      },
+      "id": "node/84406137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/84406138",
+        "amenity": "fuel",
+        "brand": "Agip",
+        "brand:wikidata": "Q377915",
+        "brand:wikipedia": "en:Agip",
+        "fuel:HGV_diesel": "yes",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Agip",
+        "opening_hours": "Mo-Fr 06:00-22:00; Sa,Su,PH 07:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3329066,
+          49.9558407
+        ]
+      },
+      "id": "node/84406138"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/160488565",
+        "amenity": "fuel",
+        "brand": "Aral",
+        "fax": "+49 6131 578844",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:lpg": "yes",
+        "fuel:octane_100": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Aral",
+        "opening_hours": "24/7",
+        "operator": "Wolfgang Hamel",
+        "payment:dkv": "yes",
+        "payment:routex": "yes",
+        "payment:uta": "yes",
+        "phone": "+49 6131 573110",
+        "ref": "0120259148",
+        "shop": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.267046,
+          49.9875937
+        ]
+      },
+      "id": "node/160488565"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/160488946",
+        "addr:city": "Mainz",
+        "addr:housenumber": "1",
+        "addr:postcode": "55131",
+        "addr:street": "Pariser Straße",
+        "amenity": "fuel",
+        "brand": "Esso",
+        "brand:wikidata": "Q867662",
+        "brand:wikipedia": "en:Esso",
+        "name": "Esso",
+        "opening_hours": "Mo-Su,PH 05:00-23:00",
+        "operator": "Esso",
+        "phone": "+49 6131 52523",
+        "website": "https://www.esso.de/de-de/find-station/mainz--essostationpariserstr1-100150936",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2661362,
+          49.987682
+        ]
+      },
+      "id": "node/160488946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/229419014",
+        "amenity": "fuel",
+        "brand": "Jet",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Jet",
+        "opening_hours": "Mo-Fr 06:00-22:30; Sa 07:00-22:30; Su 08:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2273275,
+          49.9691618
+        ]
+      },
+      "id": "node/229419014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/260562534",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "10",
+        "addr:postcode": "55120",
+        "addr:street": "Obere Kreuzstraße",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q154950",
+        "brand:wikipedia": "en:Royal Dutch Shell",
+        "fax": "+49 6131 680583",
+        "name": "Shell",
+        "opening_hours": "Mo-Fr 06:00-22:00; Sa 07:00-21:00; Su 08:00-21:00",
+        "operator": "Shell",
+        "phone": "+49 6131 683398",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2180782,
+          50.0142065
+        ]
+      },
+      "id": "node/260562534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/261948175",
+        "addr:housenumber": "187",
+        "addr:postcode": "55120",
+        "addr:street": "Rheinallee",
+        "amenity": "fuel",
+        "brand": "HEM",
+        "brand:wikidata": "Q1563517",
+        "brand:wikipedia": "de:Deutsche Tamoil",
+        "name": "HEM",
+        "operator": "HEM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2322854,
+          50.0242509
+        ]
+      },
+      "id": "node/261948175"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/262214207",
+        "addr:city": "Mainz",
+        "addr:country": "DE",
+        "addr:housenumber": "90a",
+        "addr:postcode": "55120",
+        "addr:street": "Rheinallee",
+        "amenity": "fuel",
+        "brand": "Avia",
+        "brand:wikidata": "Q300147",
+        "brand:wikipedia": "de:Avia International",
+        "name": "Avia",
+        "opening_hours": "Mo-Fr 06:00-24:00; Sa 07:00-24:00; Su 08:00-24:00",
+        "operator": "Avia",
+        "phone": "+49 6131 212080"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2515227,
+          50.0174437
+        ]
+      },
+      "id": "node/262214207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/310100641",
+        "amenity": "fuel",
+        "brand": "OIL!",
+        "brand:wikidata": "Q2007561",
+        "brand:wikipedia": "de:OIL! Tankstellen",
+        "name": "OIL!",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.3144989,
+          49.9637016
+        ]
+      },
+      "id": "node/310100641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/334364484",
+        "aeroway": "fuel",
+        "amenity": "fuel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1520783,
+          49.9717228
+        ]
+      },
+      "id": "node/334364484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/732717447",
+        "addr:city": "Mainz",
+        "addr:postcode": "55129",
+        "addr:suburb": "Hechtsheim",
+        "amenity": "fuel",
+        "fuel:cng": "no",
+        "fuel:lpg": "yes",
+        "opening_hours": "24/7",
+        "operator": "Gaveg",
+        "payment:girocard": "yes",
+        "source": "http://www.gas-tankstellen.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2545135,
+          49.9638321
+        ]
+      },
+      "id": "node/732717447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/914591866",
+        "amenity": "fuel",
+        "brand": "Total",
+        "fuel:lpg": "yes",
+        "name": "Total"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2534942,
+          49.9637433
+        ]
+      },
+      "id": "node/914591866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1211838954",
+        "amenity": "fuel",
+        "brand": "Avia",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Avia-Station",
+        "opening_hours": "Mo-Fr 06:00-22:00; Sa 07:00-22:00; Su 08:00-22:00",
+        "operator": "Avia",
+        "payment:cash": "yes",
+        "payment:girocard": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+49 6131 5540960",
+        "website": "http://www.thelen-mineraloele.de",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2030617,
+          50.0018376
+        ]
+      },
+      "id": "node/1211838954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1687531383",
+        "addr:postcode": "55126",
+        "amenity": "fuel",
+        "brand": "Esso",
+        "brand:wikidata": "Q867662",
+        "brand:wikipedia": "en:Esso",
+        "name": "Esso",
+        "opening_hours": "Mo-Fr 05:00-22:00; Su 07:30-22:00; Sa 06:30-22:00",
+        "operator": "Horst Mank",
+        "phone": "+49 6131 472087",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.1771503,
+          49.9837559
+        ]
+      },
+      "id": "node/1687531383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1837589864",
+        "addr:postcode": "55127",
+        "amenity": "fuel",
+        "name": "Agip",
+        "opening_hours": "Mo-Fr 05:30-22:30; Sa 07:00-23:00; Su 08:00-22:30",
+        "phone": "+49 6131 71522"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2005108,
+          49.9591908
+        ]
+      },
+      "id": "node/1837589864"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5418648117",
+        "amenity": "fuel",
+        "brand": "Total",
+        "brand:wikidata": "Q154037",
+        "brand:wikipedia": "fr:Total (entreprise)",
+        "contact:fax": "+49 6131 1432889",
+        "contact:phone": "+49 6131 1432888",
+        "fuel:GTL_diesel": "yes",
+        "fuel:adblue": "yes",
+        "fuel:diesel": "yes",
+        "fuel:e10": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Total",
+        "opening_hours": "Mo-Th 05:00-23:30, Fr 05:00-24:00, Sa 00:00-24:00, Su 00:00-23:30; PH 00:00-23:30",
+        "operator": "TOTAL Deutschland GmbH",
+        "payment:american_express": "yes",
+        "payment:cash": "yes",
+        "payment:cryptocurrencies": "no",
+        "payment:dkv": "yes",
+        "payment:electronic_purses": "no",
+        "payment:girocard": "yes",
+        "payment:maestro": "yes",
+        "payment:mastercard": "yes",
+        "payment:uta": "no",
+        "payment:visa": "yes",
+        "source": "http://store.total.de/de_DE/ND038455"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2566132,
+          49.9977114
+        ]
+      },
+      "id": "node/5418648117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7147056615",
+        "addr:city": "Mainz-Hechtsheim",
+        "addr:housenumber": "131",
+        "addr:postcode": "55129",
+        "addr:street": "Neue Mainzer Straße",
+        "amenity": "fuel",
+        "brand": "Esso",
+        "brand:wikidata": "Q867662",
+        "brand:wikipedia": "en:Esso",
+        "fuel:adblue": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_91": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Esso",
+        "opening_hours": "Mo-Fr 06:00-21:00; Sa 08:00-21:00; Su 10:00-19:00",
+        "operator": "Esso",
+        "phone": "+49 6131 6692321",
+        "website": "https://www.essofuelfinder.de/de-de/100150935de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2713588,
+          49.9717356
+        ]
+      },
+      "id": "node/7147056615"
+    }
+  ]
+}
