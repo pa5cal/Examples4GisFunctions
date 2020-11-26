@@ -1,8 +1,8 @@
 package org.neis_one.geo.calculation;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.locationtech.jts.geom.Geometry;
 import org.neis_one.geo.geometry.factory.PolygonFactory;
 

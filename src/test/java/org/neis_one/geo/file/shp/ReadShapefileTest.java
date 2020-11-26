@@ -1,11 +1,11 @@
 package org.neis_one.geo.file.shp;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.IOException;
 
 import org.geotools.data.simple.SimpleFeatureSource;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * Test {@link ReadShapefile}.

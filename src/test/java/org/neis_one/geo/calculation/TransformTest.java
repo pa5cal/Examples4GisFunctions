@@ -1,6 +1,6 @@
 package org.neis_one.geo.calculation;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * Test {@link Transform}.
