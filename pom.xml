@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.neis_one</groupId>
 	<artifactId>Examples4GisFunctions</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Examples4GisFunctions</name>
 
@@ -14,6 +14,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<osmosis-pbf.version>0.47</osmosis-pbf.version>
 		<geotools.version>22.2</geotools.version>
+		<junit.version>5.7.0</junit.version>
 	</properties>
 
 	<dependencies>
@@ -57,17 +58,18 @@
 		<dependency>
 		    <groupId>org.junit.jupiter</groupId>
 		    <artifactId>junit-jupiter-api</artifactId>
-		    <version>5.7.0</version>
+		    <version>${junit.version}</version>
 		    <scope>test</scope>
 		</dependency>
 	    <dependency>
 	        <groupId>org.junit.jupiter</groupId>
 	        <artifactId>junit-jupiter-engine</artifactId>
-	        <version>5.7.0</version>
+	        <version>${junit.version}</version>
 	        <scope>test</scope>
 	    </dependency>
 	</dependencies>
 
+	<!-- Repository for geotools dependencies -->
 	<repositories>
 	      <repository>
 	        <id>osgeo</id>
@@ -78,4 +80,26 @@
 	      </repository>
 	</repositories>
 
+	<!-- Building an assembly jar file (Shortest way?)-->
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance merges -->
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
