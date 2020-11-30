@@ -1,0 +1,3 @@
+﻿Nummer;Zuwegung;Fahrzeugart;Adresse;Stadt;Anzahl Stationen;X Koordinate Lon;Y Koordinate Lat;UTM 32 East;UTM 32 Northing
+1;public;Pkw;Lucy-Hillebrand-Straße;Mainz;1;8,227330;49,988380;444611,94;5537624,79
+2;private;Bike;Valenciaplatz 1;Mainz;3;8,253220;50,010580;446492,47;5540074,21

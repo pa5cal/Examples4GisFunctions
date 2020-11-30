@@ -9,11 +9,16 @@
 	<name>Examples4GisFunctions</name>
 
 	<properties>
+		<!-- Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- Java version -->
 		<maven.compiler.source>14</maven.compiler.source>
 		<maven.compiler.target>14</maven.compiler.target>
 		<osmosis-pbf.version>0.47</osmosis-pbf.version>
+		<!-- Dependency versions -->
 		<geotools.version>22.2</geotools.version>
+		<apache-commons.version>1.8</apache-commons.version>
+		<apache-poi.version>4.1.2</apache-poi.version>
 		<junit.version>5.7.0</junit.version>
 	</properties>
 
@@ -53,6 +58,23 @@
 			<groupId>de.grundid.opendatalab</groupId>
 			<artifactId>geojson-jackson</artifactId>
 			<version>1.14</version>
+		</dependency>
+		<!-- Apache Commons CSV for reading csv and excel files -->
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-csv</artifactId>
+		    <version>${apache-commons.version}</version>
+		</dependency>
+		<!-- Apache Commons POI for reading csv and excel files -->
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>${apache-poi.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>${apache-poi.version}</version>
 		</dependency>
 		<!-- Tests -->
 		<dependency>
