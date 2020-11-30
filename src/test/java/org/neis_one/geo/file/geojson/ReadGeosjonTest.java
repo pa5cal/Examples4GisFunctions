@@ -21,8 +21,8 @@ public class ReadGeosjonTest {
 	@Test
 	public void testGetGeojson() throws IOException {
 		// Arrange testdata
-		// Act/test
 		String filename = "./src/test/resources/samplegeojson/RandomGeojsonExample.geojson";
+		// Act/test
 		FeatureCollection features = ReadGeojson.get(filename);
 		// Assert
 		assertEquals(3, features.getFeatures().size());
@@ -35,8 +35,8 @@ public class ReadGeosjonTest {
 	@Test
 	public void testGetOsm() throws IOException {
 		// Arrange testdata
-		// Act/test
 		String filename = "./src/test/resources/samplegeojson/OSMAmenityFuelMainz.geojson";
+		// Act/test
 		FeatureCollection features = ReadGeojson.get(filename);
 		// Assert
 		assertEquals(30, features.getFeatures().size());
