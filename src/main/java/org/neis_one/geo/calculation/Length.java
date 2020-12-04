@@ -8,6 +8,11 @@ import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
 import org.opengis.feature.simple.SimpleFeature;
 
+/**
+ * Calculate length of {@link Geometry}.
+ * 
+ * @author pa5cal
+ */
 public class Length {
 
 	/**
@@ -31,7 +36,7 @@ public class Length {
 	public static double calculateByMultiGeometry(Geometry geometry) {
 		double totalLength = 0;
 		for (int idx = 0; idx < geometry.getNumGeometries(); idx++) {
-			totalLength = Length.calculate(geometry.getGeometryN(idx));
+			totalLength += Length.calculate(geometry.getGeometryN(idx));
 		}
 		return totalLength;
 	}
