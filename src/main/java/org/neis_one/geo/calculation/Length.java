@@ -28,6 +28,8 @@ public class Length {
 			length += calculator.getOrthodromicDistance();
 		}
 		return length;
+		// Alternative
+		// JTS.orthodromicDistance(start, end, crs);
 	}
 
 	/**

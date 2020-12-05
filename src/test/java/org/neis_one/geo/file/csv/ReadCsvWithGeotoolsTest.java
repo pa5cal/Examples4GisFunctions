@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
  * 
  * @author pa5cal
  */
-public class ReadCsvWithApacheCommonsTest {
+public class ReadCsvWithGeotoolsTest {
 
 	/**
 	 * Beschreibung: Liest Zeilen aus einer CSV Datei.<br>
@@ -22,8 +22,8 @@ public class ReadCsvWithApacheCommonsTest {
 		// Arrange testdata
 		String filename = "./src/test/resources/sampleexcel/TestExcel.csv";
 		// Act/test
-		var rows = ReadCsvWithApacheCommons.get(filename);
+		var features = ReadCsvWithGeotools.get(filename);
 		// Assert
-		assertEquals(3, rows.size());
+		assertEquals(2, features.size());
 	}
 }

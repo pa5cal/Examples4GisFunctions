@@ -18,7 +18,7 @@ public class ReadExcelWithApachePoiTest {
 	 * Erwartetes Ergebnis: Zeilen der Datei.
 	 */
 	@Test
-	public void testGetGeojson() throws IOException {
+	public void testGet() throws IOException {
 		// Arrange testdata
 		String filename = "./src/test/resources/sampleexcel/TestExcel.xlsx";
 		// Act/test
