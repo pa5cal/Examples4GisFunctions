@@ -6,6 +6,11 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * KeyValueFilter.
+ * 
+ * @author pa5cal
+ */
 public class KeyValueFilter {
 
 	private final Map<String, Set<String>> expectedLowerKeyValues;
