@@ -45,4 +45,19 @@ public class AttributeCounterTest {
 		// Assert
 		assertEquals(4, counts.size());
 	}
+
+	/**
+	 * Beschreibung: Count attributes a feature collection.<br>
+	 * Erwartetes Ergebnis: ---.
+	 */
+	@Test
+	public void testGetAttributeNames() throws IOException {
+		// Arrange Testdata
+		var filename = "./src/test/resources/samplelines/SampleLines.shp";
+		var featureType = new ReadShapefile().get(filename).getFeatures().getSchema();
+		// Act/Test
+		var attributeNames = AttributeCounter.getAttributeNames(featureType);
+		// Assert
+		assertEquals(5, attributeNames.size());
+	}
 }
