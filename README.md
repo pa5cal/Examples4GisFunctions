@@ -2,6 +2,9 @@
 
 Several JAVA examples for processing spatial data. #GeoTools #OpenStreetMap #Geojson #Shapefile
 
+## Prerequisites
+
+* Make sure Java 14 or higher is installed
 
 ## Built With
 
@@ -14,3 +17,4 @@ Several JAVA examples for processing spatial data. #GeoTools #OpenStreetMap #Geo
 ## License
 
 This project is licensed under the GNU GPL version 3 or later.
+See the [LICENSE.md](LICENSE.md) file for details.
